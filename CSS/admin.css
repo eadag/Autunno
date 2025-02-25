@@ -1,0 +1,600 @@
+body {
+  background-color: #c8d7c1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #c03551;
+  margin: 0;
+}
+.adminformheading h2,
+.adminformheading h3 {
+  display: inline;
+}
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+.columndiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.columndiv .formimg {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+.adminSUform,
+.adminSIform {
+  background-color: #f6e0e0;
+}
+.adminformcontent .adminformheading img {
+  width: 40px;
+  height: fit-content;
+  margin-right: 20px;
+}
+.adminformcontent .adminformheading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.adminformcontent .menu {
+  display: flex;
+  gap: 25px;
+}
+.adminSUform .adminformcontent .menu .SUlink h3,
+.adminSUform .adminformcontent .menu .SIlink h3,
+.adminSIform .adminformcontent .menu .SUlink h3,
+.adminSIform .adminformcontent .menu .SIlink h3 {
+  margin: 0;
+}
+
+.adminSUform .adminformcontent .menu .SUlink,
+.adminSIform .adminformcontent .menu .SIlink {
+  color: #c03551;
+  text-decoration: none;
+  border-bottom: 2px solid #c03551;
+  padding-bottom: 5px;
+}
+.adminSUform .adminformcontent .menu .SIlink,
+.adminSIform .adminformcontent .menu .SUlink {
+  color: #d35f76;
+  text-decoration: none;
+}
+.adminSUform .adminformcontent .menu .SIlink:hover,
+.adminSIform .adminformcontent .menu .SUlink:hover {
+  color: #c03551;
+}
+.field {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  position: relative;
+}
+.field input {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  background-color: #f6e0e0;
+  color: #c03551;
+  outline: none;
+  border: 1px solid #c03551;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.field input::placeholder {
+  color: #c03551;
+}
+.field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #c03551;
+  font-weight: 500;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3 ease;
+}
+.field input:focus,
+.field input:valid {
+  border-color: #c03551;
+}
+.field input:focus ~ label,
+.field input:valid ~ label {
+  top: 0%;
+  color: #c03551;
+  background-color: #f6e0e0;
+  transform: translateY(-50%);
+}
+.adminformcontent {
+  margin: 0 75px 0 50px;
+  text-align: center;
+}
+.adminformcontent .uploadimg {
+  margin-top: 20px;
+}
+.adminformcontent .uploadimg label {
+  font-weight: 500;
+  margin-right: 10px;
+}
+.adminformcontent .btnSubmit {
+  background-color: #c03551;
+  color: #f6e0e0;
+  padding: 10px 25px 10px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.adminformcontent .btnSubmit:hover {
+  background-color: #b0304a;
+  padding: 10px 30px 10px 30px;
+  transition: all 0.3s ease-in-out;
+}
+.Dtop {
+  background-color: #d35f76;
+  color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 56px;
+  position: fixed;
+}
+.Dtop #xmark,
+.Dtop #bars {
+  display: none;
+}
+.Dtop i:hover,
+.Dtop #bars:hover {
+  cursor: pointer;
+  color: #f4dbdb;
+}
+.topleft,
+.topright {
+  display: flex;
+  align-items: center;
+}
+.topright {
+  margin-right: 50px;
+}
+.topleft img {
+  width: 30px;
+  margin: 10px 10px 10px 25px;
+}
+.topleft i {
+  margin-left: 30px;
+  display: none;
+}
+.topright img {
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #f6f6f6;
+  background-color: #f6f6f6;
+}
+.topright .accinfo {
+  margin-left: 10px;
+}
+.topright .accinfo span {
+  font-size: 15px;
+}
+.sidenav {
+  width: 225px;
+  height: 100%;
+  background-color: #c03551;
+  color: #f6e0e0;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  z-index: 1;
+}
+.sidenav .pagelink,
+.sidenav .manuallink {
+  text-decoration: none;
+  color: #f6f6f6;
+  display: flex;
+  padding: 20px 25px 20px 25px;
+}
+.sidenav .manuallink:hover {
+  color: #f4dbdb;
+}
+.sidenav .pagelink:hover {
+  background-color: #b0304a;
+}
+.sidenav a img,
+.sidenav a svg {
+  margin-right: 10px;
+}
+.sidenav a img {
+  width: 24px;
+  height: 24px;
+}
+.sidenav a .HHicon {
+  width: 28px;
+  height: 24px;
+}
+.sidenav a .icnamenity {
+  width: 28px;
+  height: 28px;
+}
+section .sidebysidediv {
+  display: flex;
+  flex-grow: 1;
+}
+section {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: column;
+}
+section .sidebysidediv .dashboardcontent,
+.maindashboard {
+  margin-top: 56px;
+  margin-left: 225px;
+  padding: 20px;
+  overflow: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #dee7da 50%, #c8d7c1 50%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+section .sidebysidediv .dashboardcontent {
+  align-items: center;
+}
+section .sidebysidediv .dashboardcontent {
+  justify-content: center;
+}
+.maindashboard .greeting {
+  display: flex;
+  justify-content: center;
+  color: #c03551;
+  border-radius: 10px;
+  padding: 20px 50px;
+}
+.maindashboard .greeting h1 {
+  margin: 0;
+}
+.maindashboard .searchcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+.maindashboard .searchcontainer .searchform .searchbarnbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 4px;
+}
+.maindashboard .searchcontainer .searchform .searchbarnbtn .searchbar,
+.maindashboard .searchcontainer .searchform .searchbarnbtn .btnSearch {
+  color: #c03551;
+  background-color: #f6f6f6;
+  border: 2px solid #c03551;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 16px;
+}
+.maindashboard .searchcontainer .searchform .searchbarnbtn .btnSearch:hover {
+  background-color: #c03551;
+  color: #f6f6f6;
+}
+.maindashboard .searchcontainer .searchform .searchbarnbtn .searchbar {
+  outline: none;
+}
+.maindashboard
+  .searchcontainer
+  .searchform
+  .searchbarnbtn
+  .searchbar::placeholder {
+  color: #c03551;
+}
+.maindashboard .searchcontainer .searchform a {
+  text-decoration: none;
+  color: #c03551;
+  margin-left: 10px;
+}
+.maindashboard .searchcontainer .searchform a:hover {
+  color: #b0304a;
+}
+.maindashboard .searchcontainer .searchresults h2 {
+  display: block;
+  text-align: center;
+}
+.maindashboard .searchcontainer .searchresults h3 {
+  display: block;
+}
+.highlight {
+  background-color: #d35f76;
+  color: #f6f6f6;
+}
+.maindashboard .totalsection {
+  display: flex;
+  margin: 50px 0;
+  gap: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.maindashboard .totalsection .totalcard {
+  background-color: #f6f6f6;
+  color: #c03551;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.maindashboard .totalsection .totalcard span {
+  font-size: 40px;
+  font-weight: bold;
+}
+.maindashboard .datamanagement h2 {
+  margin: 0;
+}
+.maindashboard .searchcontainer .searchresults table,
+.maindashboard .datamanagement .dmtables table {
+  margin: 20px 0 50px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border-collapse: collapse;
+  background-color: #f6f6f6;
+}
+.maindashboard .searchcontainer .searchresults table tr th,
+.maindashboard .searchcontainer .searchresults table tr td,
+.maindashboard .datamanagement .dmtables table tr th,
+.maindashboard .datamanagement .dmtables table tr td {
+  padding: 10px 20px;
+  text-align: center;
+}
+.maindashboard .searchcontainer .searchresults table tr td,
+.maindashboard .datamanagement .dmtables table tr td {
+  border-top: 1px solid #c03551;
+}
+.maindashboard .searchcontainer .searchresults table tr td a,
+.maindashboard .datamanagement .dmtables table tr td a {
+  color: #c03551;
+}
+.maindashboard .searchcontainer .searchresults table tr td a i,
+.maindashboard .datamanagement .dmtables table tr td a i {
+  margin: 10px;
+}
+.maindashboard .searchcontainer .searchresults table tr td a:hover,
+.maindashboard .datamanagement .dmtables table tr td a:hover {
+  color: #b0304a;
+}
+.maindashboard .searchcontainer .searchresults table tr td iframe,
+.maindashboard .datamanagement .dmtables table tr td iframe {
+  width: 150px;
+  height: 150px;
+  border: 0;
+}
+.maindashboard .searchcontainer .searchresults table tr td img,
+.maindashboard .datamanagement .dmtables table tr td img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+.maindashboard .searchcontainer .searchresults table tr td .Mpfp,
+.maindashboard .datamanagement .dmtables table tr td .Mpfp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.btnback {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #c03551;
+}
+.btnback:hover {
+  color: #b0304a;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform {
+  width: fit-content;
+  background-color: #f6e0e0;
+  padding: 30px 50px 50px 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform .sidebysidediv {
+  flex-wrap: wrap;
+  margin-left: 10px;
+  justify-content: space-between;
+  gap: 40px;
+}
+section
+  .sidebysidediv
+  .dashboardcontent
+  .adminadddataform
+  .sidebysidediv
+  .sidebysidediv {
+  gap: 0;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform label {
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform input,
+section .sidebysidediv .dashboardcontent .adminadddataform textarea,
+section .sidebysidediv .dashboardcontent .adminadddataform select {
+  display: block;
+  margin-top: 20px;
+}
+section
+  .sidebysidediv
+  .dashboardcontent
+  .adminadddataform
+  input[type="checkbox"],
+section .sidebysidediv .dashboardcontent .adminadddataform .forcheckbox {
+  display: inline;
+  margin-left: 4px;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform .textbox,
+section .sidebysidediv .dashboardcontent .adminadddataform textarea,
+section .sidebysidediv .dashboardcontent .adminadddataform select {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #c03551;
+  border-radius: 10px;
+  outline: none;
+  color: #c03551;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform textarea {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+section
+  .sidebysidediv
+  .dashboardcontent
+  .adminadddataform
+  .textbox::placeholder,
+section
+  .sidebysidediv
+  .dashboardcontent
+  .adminadddataform
+  textarea::placeholder,
+section .sidebysidediv .dashboardcontent .adminadddataform select::placeholder,
+section
+  .sidebysidediv
+  .dashboardcontent
+  .scheduleformgroup
+  select::placeholder {
+  color: #c03551;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform .btnAdd {
+  background-color: #c03551;
+  color: #f6e0e0;
+  padding: 10px 25px 10px 25px;
+  border: none;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform .btnAdd:hover {
+  background-color: #b0304a;
+  padding: 10px 30px 10px 30px;
+  transition: padding 0.2s ease;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform .scheduleformgroup {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+section
+  .sidebysidediv
+  .dashboardcontent
+  .adminadddataform
+  .scheduleformgroup
+  .HHselect,
+section
+  .sidebysidediv
+  .dashboardcontent
+  .adminadddataform
+  .scheduleformgroup
+  .ScheduleDates {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+section
+  .sidebysidediv
+  .dashboardcontent
+  .adminadddataform
+  .scheduleformgroup
+  .ScheduleDates
+  input,
+section .sidebysidediv .dashboardcontent .adminadddataform input[type="date"] {
+  border: 1px solid #c03551;
+  padding: 4px;
+  border-radius: 10px;
+}
+section
+  .sidebysidediv
+  .dashboardcontent
+  .adminadddataform
+  .scheduleformgroup
+  .btnAdd {
+  margin-top: 25px;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform fieldset {
+  border: 1px solid #c03551;
+  border-radius: 25px;
+  padding: 25px;
+  text-align: center;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform fieldset table img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform fieldset table th {
+  padding: 10px;
+}
+section .sidebysidediv .dashboardcontent .adminadddataform fieldset table td a {
+  color: #c03551;
+}
+section
+  .sidebysidediv
+  .dashboardcontent
+  .adminadddataform
+  fieldset
+  table
+  td
+  a:hover {
+  color: #b0304a;
+}
+.readonlytxt {
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f4dbdb;
+  color: #c03551;
+  border: 1px solid #c03551;
+}
+.updatedateinputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .formcontainer {
+    height: auto;
+  }
+  .adminSUform,
+  .adminSIform {
+    padding-bottom: 25px;
+    width: 300px;
+    margin: 25px;
+  }
+  .adminSUform img,
+  .adminSIform img {
+    width: 300px;
+  }
+  .adminformcontent .adminformheading {
+    margin-top: 20px;
+  }
+  .sidenav {
+    display: none;
+  }
+  .Dtop #bars {
+    display: block;
+  }
+  .maindashboard,
+  section .sidebysidediv .dashboardcontent {
+    margin-left: 0;
+  }
+}
