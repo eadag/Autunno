@@ -10,7 +10,7 @@
 - Javascript
 
 **Usage**  
-Members: Browse available holiday homes with filtered search, Book properties, Choose a payment method and Confirm the booking, Give reviews, Add properties to favourites.
+Members: Browse available holiday homes with filtered search, Book properties, Choose a payment method and Confirm the booking, Give reviews, Add properties to favourites.  
 Administrators: Manage listings, bookings, and payments of holiday homes.
 
 **License**  
