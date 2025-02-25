@@ -1,0 +1,1968 @@
+body {
+  background-color: #e9efe6;
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+.formcontainer {
+  background-color: #c8d7c1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+.backlink {
+  text-decoration: none;
+  color: #c03551;
+  margin-right: auto;
+  margin-left: 50px;
+}
+.backlink:hover {
+  color: #b0304a;
+}
+.formcontainer .memberSUform h2,
+.formcontainer .memberSIform h2,
+.formcontainer .memberSUform h3,
+.formcontainer .memberSIform h3 {
+  display: inline;
+}
+.columndiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.columndiv .formimg {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+.memberSUform,
+.memberSIform {
+  background-color: #f6e0e0;
+}
+.memberSUform img,
+.memberSIform img {
+  width: 400px;
+}
+.memberformcontent .memberformheading img {
+  width: 40px;
+  height: fit-content;
+  margin-right: 20px;
+}
+.memberformcontent .memberformheading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.memberformcontent .menu {
+  display: flex;
+  gap: 25px;
+}
+.memberSUform .memberformcontent .menu .SUlink,
+.memberSIform .memberformcontent .menu .SIlink {
+  color: #c03551;
+  text-decoration: none;
+  border-bottom: 2px solid #c03551;
+  padding-bottom: 5px;
+}
+.memberSUform .memberformcontent .menu .SIlink,
+.memberSIform .memberformcontent .menu .SUlink {
+  color: #d35f76;
+  text-decoration: none;
+}
+.memberSUform .memberformcontent .menu .SIlink:hover,
+.memberSIform .memberformcontent .menu .SUlink:hover {
+  color: #c03551;
+}
+.field {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  position: relative;
+}
+.field input {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
+  background-color: #f6e0e0;
+  color: #c03551;
+  outline: none;
+  border: 1px solid #c03551;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.field input::placeholder {
+  color: #c03551;
+}
+.field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #c03551;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3 ease;
+}
+.field input:focus,
+.field input:valid {
+  border-color: #c03551;
+}
+.field input:focus ~ label,
+.field input:valid ~ label {
+  top: 0%;
+  color: #c03551;
+  background-color: #f6e0e0;
+  transform: translateY(-50%);
+}
+.memberformcontent {
+  margin: 0 75px 0 50px;
+  text-align: center;
+}
+.memberformcontent .uploadimg {
+  margin-top: 20px;
+}
+.memberformcontent .uploadimg label {
+  font-weight: 500;
+  margin-right: 10px;
+}
+.memberformcontent .btnSubmit {
+  background-color: #c03551;
+  color: #f6e0e0;
+  padding: 10px 25px 10px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.memberformcontent .btnSubmit:hover {
+  background-color: #b0304a;
+  padding: 10px 30px 10px 30px;
+  transition: all 0.2s ease-in-out;
+}
+.lpheader {
+  background-image: url("../images/lpimg.jpg");
+  background-size: cover;
+  background-position: center 38%;
+  background-repeat: no-repeat;
+  border-radius: 0 0px 75px 75px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.lpheader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+#defaultnav {
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px 50px 15px 50px;
+  position: fixed;
+  top: 0;
+}
+#defaultnav a {
+  text-decoration: none;
+}
+.lpheader #defaultnav {
+  background-color: transparent;
+  color: #f6e0e0;
+}
+.npheader #defaultnav {
+  background-color: #e9efe6;
+  color: #c03551;
+}
+.lpheader #defaultnav .logo a {
+  color: #f6e0e0;
+}
+.npheader #defaultnav .logo a {
+  color: #c03551;
+}
+#defaultnav .logo img {
+  width: 30px;
+  margin-right: 20px;
+}
+#defaultnav .logo .logoname {
+  display: inline;
+  font-family: "Pinyon Script";
+  font-size: 34px;
+  font-weight: normal;
+}
+#defaultnav #navrightcontent a {
+  font-size: 18px;
+  font-weight: 500;
+}
+#defaultnav #navrightcontent .pagelinks {
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.lpheader #defaultnav #navrightcontent .pagelinks {
+  color: #f6e0e0;
+}
+.npheader #defaultnav #navrightcontent .pagelinks {
+  color: #c03551;
+}
+#defaultnav #navrightcontent .pagelinks:hover {
+  cursor: pointer;
+}
+.lpheader #defaultnav #navrightcontent .pagelinks:hover {
+  border-bottom-color: #f6e0e0;
+}
+.npheader #defaultnav #navrightcontent .pagelinks:hover {
+  border-bottom-color: #c03551;
+}
+#defaultnav #navrightcontent {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+}
+#defaultnav #navrightcontent .btnSignUp,
+#defaultnav #navrightcontent .btnSignIn,
+#defaultnav #navrightcontent .btnSignOut,
+#respnav .btnSignOut {
+  padding: 4px 15px 6px 15px;
+  border-radius: 10px;
+  border-bottom: none;
+  transition: none;
+}
+.lpheader #defaultnav #navrightcontent .btnSignUp,
+.lpheader #defaultnav #navrightcontent .btnSignIn,
+#respnav .btnSignOut {
+  color: #c03551;
+}
+.lpheader #defaultnav #navrightcontent .btnSignIn,
+#respnav .btnSignOut {
+  background-color: #f6e0e0;
+}
+.lpheader #defaultnav #navrightcontent .btnSignUp {
+  background-color: #e9efe6;
+}
+.lpheader #defaultnav #navrightcontent .btnSignOut {
+  color: #f6e0e0;
+  background-color: #c03551;
+}
+.lpheader #defaultnav #navrightcontent .btnSignIn:hover,
+#respnav .btnSignOut:hover {
+  background-color: #edc0c0;
+  color: #c03551;
+}
+.lpheader #defaultnav #navrightcontent .btnSignUp:hover {
+  background-color: #bccfb5;
+}
+.lpheader #defaultnav #navrightcontent .btnSignOut:hover {
+  background-color: #b0304a;
+}
+.npheader #defaultnav #navrightcontent .btnSignUp,
+.npheader #defaultnav #navrightcontent .btnSignIn {
+  color: #f6e0e0;
+}
+.npheader #defaultnav #navrightcontent .btnSignIn {
+  background-color: #c03551;
+}
+.npheader #defaultnav #navrightcontent .btnSignUp {
+  background-color: #658859;
+}
+.npheader #defaultnav #navrightcontent .btnSignOut {
+  color: #f6e0e0;
+  background-color: #c03551;
+}
+.npheader #defaultnav #navrightcontent .btnSignIn:hover {
+  background-color: #b0304a;
+}
+.npheader #defaultnav #navrightcontent .btnSignUp:hover {
+  background-color: #526f49;
+}
+.npheader #defaultnav #navrightcontent .btnSignOut:hover {
+  background-color: #b0304a;
+}
+#defaultnav #navrightcontent div {
+  position: relative;
+}
+#defaultnav #navrightcontent .favicon,
+#respnav .favicon {
+  width: 20px;
+  padding: 4px;
+  border-radius: 50%;
+}
+#defaultnav #navrightcontent .Upfp,
+#respnav .Upfp {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 2px;
+}
+#defaultnav #navrightcontent .Upfp {
+  background-color: #c03551;
+}
+#respnav .Upfp {
+  background-color: #f6e0e0;
+  margin-top: 40px;
+}
+#defaultnav #navrightcontent #carticon {
+  color: #c03551;
+}
+#defaultnav #navrightcontent #carticon,
+#respnav #carticon {
+  padding: 8px 6px;
+  border-radius: 50%;
+}
+#respnav div a {
+  margin-top: 40px;
+}
+#defaultnav #navrightcontent .favtooltip,
+#defaultnav #navrightcontent .usernametooltip,
+#defaultnav #navrightcontent .bookingcarttooltip {
+  background-color: rgba(192, 53, 81, 0.5);
+  color: #f6e0e0;
+  padding: 2px 8px 4px 8px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: 400;
+}
+#defaultnav #navrightcontent .favtooltip,
+#defaultnav #navrightcontent .usernametooltip {
+  top: 111%;
+  width: fit-content;
+}
+#defaultnav #navrightcontent .bookingcarttooltip {
+  top: 125%;
+  width: 100px;
+}
+#defaultnav #navrightcontent .favtooltip::after,
+#defaultnav #navrightcontent .usernametooltip::after,
+#defaultnav #navrightcontent .bookingcarttooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #c03551 transparent;
+}
+#defaultnav #navrightcontent .favicon:hover,
+#defaultnav #navrightcontent .Upfp:hover,
+#defaultnav #navrightcontent #carticon:hover {
+  background-color: rgba(176, 48, 74, 0.4);
+}
+#defaultnav #navrightcontent .favicon:hover + .favtooltip {
+  visibility: visible;
+}
+#defaultnav #navrightcontent .Upfp:hover + .usernametooltip {
+  visibility: visible;
+}
+#defaultnav #navrightcontent #carticon:hover + .bookingcarttooltip {
+  visibility: visible;
+}
+#respnav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #c03551;
+  color: #f6e0e0;
+  display: none;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  text-align: center;
+  overflow-y: auto;
+}
+#respnav a {
+  text-decoration: none;
+  color: #f6e0e0;
+  display: block;
+  width: fit-content;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#respnav .btnSignUp,
+#respnav .btnSignIn {
+  width: fit-content;
+  padding: 4px 15px 6px 15px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#respnav .btnSignUp {
+  color: #c03551;
+  background-color: #e9efe6;
+}
+#respnav .btnSignIn {
+  color: #c03551;
+  background-color: #f6e0e0;
+}
+#respnav .btnSignIn:hover {
+  background-color: #edc0c0;
+  color: #c03551;
+}
+#respnav .btnSignUp:hover {
+  background-color: #bccfb5;
+  color: #c03551;
+}
+#respnav #xmark {
+  text-align: center;
+  margin-top: 75px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+#respnav i {
+  color: #f6e0e0;
+}
+#defaultnav .barsicon i,
+#respnav #xmark {
+  display: none;
+}
+#defaultnav .barsicon i:hover,
+#respnav #xmark:hover,
+#respnav a:hover {
+  cursor: pointer;
+  color: #edc0c0;
+}
+
+#respnav div {
+  position: relative;
+}
+#respnav .favtooltip,
+#respnav .usernametooltip,
+#respnav .bookingcarttooltip {
+  background-color: rgba(246, 224, 224, 0.5);
+  color: #f6e0e0;
+  width: fit-content;
+  padding: 2px 8px 4px 8px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: 400;
+}
+#respnav .favtooltip {
+  left: 64%;
+}
+#respnav .usernametooltip {
+  top: 55%;
+  left: 66.6%;
+}
+#respnav .bookingcarttooltip {
+  top: 10%;
+  left: 66%;
+}
+#respnav .favtooltip::after,
+#respnav .usernametooltip::after,
+#respnav .bookingcarttooltip::after {
+  content: "";
+  position: absolute;
+  top: 28%;
+  left: -9px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #f6e0e0 transparent transparent;
+}
+#respnav .favicon:hover,
+#respnav .Upfp:hover,
+#respnav #carticon:hover {
+  background-color: rgba(246, 224, 224, 0.5);
+}
+#respnav .favicon:hover + .favtooltip {
+  visibility: visible;
+}
+#respnav .Upfp:hover + .usernametooltip {
+  visibility: visible;
+}
+#respnav #carticon:hover + .bookingcarttooltip {
+  visibility: visible;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+.headercontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #f6e0e0;
+  z-index: 1;
+}
+.headercontent h1 {
+  font-family: "Pinyon Script";
+  font-size: 100px;
+  font-weight: normal;
+  margin-bottom: 0px;
+  height: 100px;
+}
+.headercontent p {
+  font-size: 18px;
+  margin-top: 0;
+}
+.headercontent p span {
+  font-weight: bold;
+}
+.headercontent a {
+  text-decoration: none;
+  color: #f6e0e0;
+  background-color: #c03551;
+  border: 2px solid #f6e0e0;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+.headercontent a:hover {
+  background-color: #b0304a;
+}
+.formcontainer form {
+  display: flex;
+}
+.headercontent input::placeholder {
+  color: #c03551;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+.headercontent input:focus {
+  border-color: #c03551;
+}
+.headercontent button {
+  background-color: #f6e0e0;
+  color: #c03551;
+  padding-right: 18px;
+  border-radius: 0 25px 25px 0;
+  border: none;
+}
+.headercontent button:hover {
+  color: #edc0c0;
+  cursor: pointer;
+}
+section {
+  color: #c03551;
+}
+.npsection {
+  margin-top: 80px;
+}
+.PPsection {
+  margin: 80px 50px 50px 50px;
+}
+.PPsection p {
+  text-align: justify;
+}
+section h1 {
+  font-size: 30px;
+}
+section h2 {
+  font-size: 24px;
+}
+.servicescontainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  text-align: center;
+  margin: 75px 50px 0 50px;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+.services div h2 {
+  font-size: 20px;
+  border-bottom: 2px solid #c03551;
+  width: fit-content;
+  padding-bottom: 4px;
+}
+.services div p {
+  text-align: justify;
+}
+.services div {
+  width: 400px;
+}
+.services div form {
+  display: flex;
+}
+.services div form .emailinput {
+  background-color: #e9efe6;
+  border: 1px solid #c03551;
+  border-right: 0;
+  padding: 0 10px;
+  color: #c03551;
+  font-size: 15px;
+  outline: none;
+  margin: 0;
+  width: 222px;
+}
+.services div form .emailinput::placeholder {
+  font-size: 15px;
+  color: #c03551;
+}
+.services div form .btnsub {
+  background-color: #c03551;
+  color: #f6e0e0;
+  border: 1px solid #c03551;
+  padding: 8px 14px 8px 14px;
+  font-size: 15px;
+  margin: 0;
+}
+.services div form .btnsub:hover {
+  cursor: pointer;
+  background-color: #b0304a;
+}
+.Htypes {
+  text-align: center;
+  margin: 55px 44px 44px 44px;
+}
+.typecardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.typecardcontainer .typecard {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 25px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.typecardcontainer .typecard img {
+  width: 225px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.typecardcontainer .typecard p {
+  font-weight: 500;
+  color: #c03551;
+  margin: 8px;
+}
+.lpHHcontainer {
+  margin: 50px;
+}
+.lpHHcontainer h1,
+.lpHHcontainer p {
+  text-align: center;
+}
+.lpHHcontainer .btndiscover {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lpHHcontainer .btndiscover a,
+.nofavinfo a {
+  text-decoration: none;
+  color: #c03551;
+  border: 2px solid #c03551;
+  border-radius: 25px;
+  padding: 8px 24px;
+}
+.lpHHcontainer .btndiscover a:hover,
+.nofavinfo a:hover {
+  background-color: #c03551;
+  color: #f6e0e0;
+}
+.lpHHcontainer .HHcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-top: 25px;
+  justify-content: center;
+}
+.lpHHcontainer .HHcontainer .HHdiv {
+  width: 350px;
+}
+.lpHHcontainer .HHcontainer .HHdiv .HHtop .HHimg {
+  width: 350px;
+}
+.reviewssection {
+  background-image: url(../images/reviewcontainerbg.jpg);
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  color: #f6e0e0;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 28px;
+  z-index: 1;
+}
+.reviewssection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+.mainreviewdiv {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviewscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  align-items: center;
+}
+.reviewscontainer .review {
+  width: 400px;
+  height: fit-content;
+  background-color: #f6e0e0;
+  color: #c03551;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.reviewscontainer .review .reviewtext {
+  display: flex;
+}
+.reviewscontainer .review .reviewtext i {
+  font-size: 34px;
+  margin-right: 5px;
+}
+.reviewscontainer .review .reviewernrating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviewscontainer .review .reviewernrating .stars {
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 20px;
+}
+.reviewscontainer .review .reviewernrating .stars .star {
+  color: #edc0c0;
+}
+.reviewscontainer .review .reviewernrating .stars .star.selected {
+  color: #ffc700;
+}
+.reviewscontainer .review .reviewernrating img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 1px solid #c03551;
+  border-radius: 50%;
+  margin: 4px 20px;
+}
+.reviewscontainer .review .reviewer {
+  display: flex;
+  align-items: center;
+}
+.reviewssection .mainreviewdiv .btnread {
+  margin-left: auto;
+  width: fit-content;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.reviewssection .mainreviewdiv .btnread a {
+  text-decoration: none;
+  color: #f6e0e0;
+}
+.reviewssection .mainreviewdiv .btnread a:hover {
+  color: #edc0c0;
+}
+.HHlist,
+.searchresults {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-top: 20px;
+}
+.searchresults h2,
+.HHlist h2,
+.favouritelist h2 {
+  text-align: center;
+  color: #c03551;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 8px;
+}
+.HHcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+.searchresults {
+  margin: 20px;
+}
+.searchresults .HHcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.HHdiv {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  box-shadow: inset 0 -4px 6px rgba(192, 53, 81, 0.2);
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 10px;
+}
+.HHdiv:hover {
+  background-color: #f6e0e0;
+}
+.HHdiv .HHtop {
+  position: relative;
+}
+.HHdiv .HHtop .HHimg {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.HHdiv:hover .HHtop .HHimg {
+  filter: brightness(80%);
+}
+.HHdiv .favedicon,
+.HHdiv .favicon {
+  position: absolute;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  border-radius: 50%;
+  right: 8px;
+  top: 8px;
+}
+.HHdiv .favicon,
+.floatright .favicon {
+  border: 1px solid #edc0c0;
+  background-color: #a9a9a9;
+}
+.HHdiv .favedicon,
+.favcontainer .favedicon,
+.floatright .favedicon {
+  border: 1px solid #c03551;
+  background-color: rgba(246, 224, 224, 0.5);
+}
+.HHdiv .favicon:hover,
+.floatright .favicon:hover {
+  cursor: pointer;
+  background-color: #edc0c0;
+}
+.HHdiv .btnFav,
+.floatright .btnFav {
+  width: 30px;
+  height: 30px;
+  background: url("../images/favouriteicon2.png") no-repeat center center;
+  background-size: 20px 20px;
+  border: 1px solid #edc0c0;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #a9a9a9;
+}
+.HHdiv .btnFav {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 1;
+}
+.floatright .btnFav {
+  margin-bottom: 20px;
+}
+.HHdiv .btnFav:hover,
+.floatright .btnFav:hover {
+  background-color: #edc0c0;
+}
+.HHdiv .HHinfo {
+  padding: 20px;
+  width: 100%;
+}
+.HHdiv .HHinfo h3 {
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+.HHdiv .HHinfo .HHbreifinfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.HHdiv .HHinfo .HHbreifinfo div i {
+  margin-right: 4px;
+}
+.HHdiv .HHinfo .btnview a,
+.favcard .HHinfo .btnview a {
+  text-decoration: none;
+  color: #c03551;
+}
+.HHdiv .HHinfo .btnview hr,
+.favcard .HHinfo .btnview hr {
+  width: 10px;
+  border: 0;
+  height: 1px;
+  background-color: #c03551;
+  margin-top: 2px;
+}
+.HHdiv .HHinfo .btnview a:hover + hr,
+.favcard .HHinfo .btnview a:hover + hr {
+  width: 30px;
+  transition: width ease 0.3s;
+}
+.HHdiv .HHinfo .btnview,
+.favcard .HHinfo .btnview {
+  text-align: center;
+}
+.HHdetailscontainer {
+  background-color: #fff;
+  padding: 10px 50px 10px 50px;
+  border-radius: 75px 75px 0 0;
+  margin: 0 50px;
+}
+.HHdetailscontainer .HHdetails .HHdetailsright .mapheading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.HHdetailscontainer .HHdetails {
+  display: flex;
+  flex-wrap: wrap;
+}
+.HHdetailscontainer .HHdetails .HHdetailsleft,
+.HHdetailscontainer .HHdetails .HHdetailsright {
+  flex-basis: 45%;
+  flex-grow: 1;
+  margin-top: 2%;
+}
+.HHdetailscontainer .HHdetails .HHdetailsright {
+  margin-left: 4%;
+}
+.HHdetailscontainer .HHdetails .HHdetailsleft {
+  overflow: auto;
+}
+.HHdetailscontainer .HHdetails .HHdetailsleft h1,
+.HHdetailscontainer .HHdetails .HHdetailsright .floatright h3 {
+  margin: 0 0 10px 0;
+}
+.HHdetailscontainer .HHdetails .HHdetailsright .floatright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+}
+.HHdetailscontainer .HHdetails .HHdetailsright h3 {
+  right: 0;
+}
+.HHdetailscontainer .HHdetails .HHdetailsleft p {
+  text-align: justify;
+  line-height: 28px;
+}
+.floatright .favedicon,
+.floatright .favicon {
+  width: 20px;
+  margin-bottom: 20px;
+}
+.homecomponents {
+  display: flex;
+  margin: 10px 0;
+}
+.homecomponents div {
+  margin-right: 50px;
+}
+.homecomponents div i {
+  margin-right: 8px;
+}
+.homecomponents div p {
+  display: inline;
+  margin-right: 14px;
+}
+
+.amenitiescontainer {
+  display: flex;
+}
+.amenitiescontainer div {
+  flex: 1;
+}
+.amenity {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+}
+.amenity i {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+.amenity .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  pointer-events: none;
+}
+.amenity.hidden .overlay::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 155%;
+  background: #526f49;
+  transform: rotate(-50deg);
+  top: -4px;
+  left: 40%;
+  z-index: 1;
+  border-radius: 2px;
+}
+.amenity.hidden i {
+  color: #c03551;
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+.slideimgcontainer {
+  position: relative;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  display: flex;
+}
+.slideimg {
+  display: none;
+  width: 600px;
+  height: 400px;
+  margin-right: 2px;
+}
+.slideimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cursor {
+  cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  margin-top: -50px;
+  padding: 2px 10px 2px 10px;
+  color: #c03551;
+  background-color: #f6e0e0;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev {
+  margin-left: 20px;
+}
+.next {
+  right: 20%;
+}
+.prev:hover,
+.next:hover {
+  background-color: #e9efe6;
+  color: #b0304a;
+}
+.row {
+  width: 120px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  width: 120px;
+  height: 78.4px;
+  margin-bottom: 2px;
+}
+.column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.demo {
+  filter: brightness(50%);
+}
+.active,
+.demo:hover {
+  filter: brightness(100%);
+}
+.HHdetailscontainer .bookbuttondiv a {
+  text-decoration: none;
+  color: #f6e0e0;
+  background-color: #c03551;
+  padding: 8px 18px 8px 18px;
+  font-size: 14px;
+  border-radius: 25px;
+}
+.HHdetailscontainer .bookbuttondiv a:hover {
+  padding: 8px 24px 8px 24px;
+  transition: padding ease 0.3s;
+  cursor: pointer;
+  background-color: #b0304a;
+}
+.HHdetailscontainer .bookbuttondiv {
+  text-align: center;
+  margin: 50px;
+}
+
+.reviewform {
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 10px 40px;
+  background-color: #c03551;
+  color: #f6e0e0;
+}
+.reviewform img {
+  width: 250px;
+}
+.reviewform form textarea {
+  background-color: #f6e0e0;
+  color: #c03551;
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #bccfb5;
+  border-radius: 10px;
+  outline: none;
+  margin: 20px 0;
+  font-size: 14px;
+  font-family: "Mulish", sans-serif;
+}
+.reviewform form textarea::placeholder {
+  color: #c03551;
+}
+.reviewform form .rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.reviewform form .rating input {
+  display: none;
+}
+.reviewform form .rating label {
+  font-size: 2em;
+  color: #f6e0e0;
+  cursor: pointer;
+}
+.reviewform form .rating label:hover,
+.reviewform form .rating label:hover ~ label,
+.reviewform form .rating input:checked ~ label {
+  color: #ffc700;
+}
+.reviewform form input {
+  margin: 20px 0;
+  padding: 6px 16px;
+  color: #c03551;
+  background-color: #f6f6f6;
+  border: 2px solid #bccfb5;
+  border-radius: 25px;
+}
+.reviewform form input:hover {
+  background-color: #edc0c0;
+  padding: 6px 22px;
+  transition: padding ease 0.3s;
+}
+.aboutsection,
+.contactsection {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+.aboutsection h1,
+.contactsection h1 {
+  font-family: "Pinyon Script";
+  font-size: 75px;
+  font-weight: normal;
+  margin: 0;
+}
+.aboutsection .imgabout img,
+.contactsection .imgcontact img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.aboutsection .aboutdiv p,
+.contactsection .contactdiv p {
+  width: 500px;
+  text-align: justify;
+  line-height: 22px;
+}
+.vmcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 20px;
+  width: fit-content;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.vmcontainer .visiondiv,
+.vmcontainer .missiondiv {
+  background-color: #c03551;
+  color: #f6e0e0;
+  padding: 5px 25px;
+  border-radius: 25px;
+}
+.vmcontainer .visiondiv div,
+.vmcontainer .missiondiv div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.vmcontainer .visiondiv div img,
+.vmcontainer .missiondiv div img {
+  width: 40px;
+  height: 40px;
+}
+.vmcontainer .visiondiv p,
+.vmcontainer .missiondiv p {
+  width: 500px;
+  text-align: justify;
+  line-height: 22px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0;
+  background-color: #f6e0e0;
+}
+.gallery .galleryrow {
+  display: flex;
+  width: 100%;
+  gap: 0;
+  align-items: center;
+}
+.gallery .galleryrow img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  height: 500px;
+  object-fit: cover;
+}
+.gallery .galleryrow div {
+  width: 47.13%;
+  margin: 0;
+  padding: 20px;
+}
+.gallery .galleryrow div p {
+  text-align: justify;
+  line-height: 22px;
+}
+.contactcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactcontainer .contactheader h1 {
+  text-align: center;
+}
+.contactcontainer .contactheader div {
+  margin: 40px;
+}
+.contactcontainer .contactheader div img {
+  width: 400px;
+}
+.contactthreedivs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 40px;
+}
+.contactcontainer .contactthreedivs div i {
+  font-size: 34px;
+  text-align: center;
+}
+.contactcontainer .contactthreedivs iframe {
+  width: 400px;
+  height: 200px;
+}
+.contactcontainer .contactthreedivs div .sociallinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 300px;
+}
+.contactcontainer .contactthreedivs div .sociallinks a {
+  text-decoration: none;
+  color: #c03551;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.contactcontainer .contactthreedivs div .sociallinks a:hover {
+  color: #b0304a;
+}
+.searchseccontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.searchform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.searchform .searchcontent {
+  margin: 0 50px;
+}
+.searchform .searchcontent .searchbarnbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+.searchcontent .searchbarnbtn .searchbar,
+.searchcontent .searchbarnbtn .btnSearch {
+  color: #c03551;
+  background-color: #fff;
+  border: 2px solid #c03551;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 16px;
+}
+.searchcontent .searchbarnbtn .btnSearch:hover {
+  background-color: #c03551;
+  color: #f6f6f6;
+}
+.searchcontent .searchbarnbtn .searchbar,
+.searchcontent .SearchFilters input {
+  outline: none;
+}
+.searchcontent .searchbarnbtn .searchbar::placeholder,
+.searchcontent .SearchFilters input::placeholder,
+.searchcontent .SearchFilters select {
+  color: #c03551;
+}
+.searchcontent .SearchFilters {
+  margin-top: 20px;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.searchcontent .SearchFilters div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.searchcontent .SearchFilters div input,
+.searchcontent .SearchFilters div select {
+  border: 2px solid #c03551;
+  border-radius: 6px;
+  padding: 8px 18px;
+  width: fit-content;
+}
+.searchcontent .SearchFilters div input[type="number"] {
+  width: 100px;
+}
+.searchcontent .SearchFilters a:hover {
+  cursor: pointer;
+  color: #b0304a;
+}
+.nofavinfo img {
+  width: 250px;
+  height: 250px;
+}
+.nofavinfo {
+  text-align: center;
+}
+.nofavinfo h3 {
+  margin: 40px;
+}
+.favcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.favlist {
+  margin: 40px;
+  background-color: #fff;
+  padding: 20px 80px;
+}
+.favlist .favcardseperator {
+  border: none;
+  height: 2px;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(192, 53, 81, 0.5),
+    rgba(192, 53, 81, 0.5) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  margin: 20px 0;
+  color: rgba(192, 53, 81, 0.5);
+}
+.favcard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.favcontainer .favedicon,
+.floatright .favedicon,
+.floatright .favicon {
+  padding: 4px;
+  border-radius: 50%;
+}
+.favcard p {
+  margin: 0;
+}
+.favcard img {
+  width: 400px;
+}
+.favcard .HHinfo {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.favcard .HHinfo .guestprice {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.favcard div a {
+  color: #c03551;
+  text-decoration: none;
+}
+.favcard div a:hover {
+  color: #b0304a;
+}
+
+.bookingformcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.bookingformcontainer form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  align-items: center;
+  height: fit-content;
+}
+.bookingformcontainer form .bookingformcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bookingformcontainer form .bookingformcontent .Bformtop .Bformimg {
+  position: relative;
+  width: 800px;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+}
+.bookingformcontainer form .bookingformcontent .Bformtop .Bformimg img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+.bookingformcontainer
+  form
+  .bookingformcontent
+  .Bformtop
+  .Bformimg
+  .Bformimgtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f6f6f6;
+  text-align: center;
+}
+.bookingformcontainer form .bookingformcontent .Bforminputs {
+  width: fit-content;
+  margin-top: 20px;
+}
+.bookingformcontainer form .bookingformcontent .Bforminputs .Bformrows {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.bookingformcontainer
+  form
+  .bookingformcontent
+  .Bforminputs
+  .Bformrows
+  .rowgroup
+  label {
+  display: block;
+  margin-bottom: 5px;
+}
+.bookingformcontainer
+  form
+  .bookingformcontent
+  .Bforminputs
+  .Bformrows
+  .rowgroup
+  input,
+.bookingformcontainer
+  form
+  .bookingformcontent
+  .Bforminputs
+  .Bformrows
+  .rowgroup
+  textarea {
+  padding: 10px;
+  font-size: 14px;
+  color: #c03551;
+  border: 1px solid #c03551;
+  border-radius: 10px;
+  outline: none;
+}
+.bookingformcontainer
+  form
+  .bookingformcontent
+  .Bforminputs
+  .Bformrows
+  .rowgroup
+  input::placeholder {
+  color: #c03551;
+}
+.bookingformcontainer
+  form
+  .bookingformcontent
+  .Bforminputs
+  .Bformrows
+  .rowgroup
+  textarea {
+  min-width: 410px;
+  max-width: 410px;
+  min-height: 30px;
+  max-height: 30px;
+}
+.bookingformcontainer
+  form
+  .bookingformcontent
+  .Bforminputs
+  .addtobc
+  input[type="submit"] {
+  background-color: #c03551;
+  color: #f6e0e0;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: padding 0.2s ease;
+}
+.bookingformcontainer form .bookingformcontent .Bforminputs .addtobc {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.bookingformcontainer
+  form
+  .bookingformcontent
+  .Bforminputs
+  .addtobc
+  input[type="submit"]:hover {
+  background-color: #b0304a;
+  padding: 10px 35px;
+}
+.bookingformcontainer
+  form
+  .bookingformcontent
+  .Bforminputs
+  .Bformrows
+  .rowgroup
+  input[type="number"] {
+  width: 50px;
+  margin-left: 20px;
+}
+
+.flatpickr-day.available {
+  background-color: #658859 !important;
+  color: #fff !important;
+}
+.flatpickr-day:hover {
+  background-color: #526f49 !important;
+  color: #fff !important;
+}
+.flatpickr-day.unavailable {
+  background-color: #dbdbdd !important;
+  color: #fff !important;
+  cursor: not-allowed;
+}
+.flatpickr-day {
+  cursor: pointer;
+}
+
+.bookingformcontent .calculation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookingformcontent .calculation fieldset {
+  border: 1px solid #c03551;
+  border-radius: 10px;
+}
+.bookingformcontent .calculation fieldset label {
+  display: block;
+  margin: 20px;
+}
+.Bcartform .Bcartformcontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.Bcartform .Bcartformcontent .Bcartformleft fieldset {
+  margin-left: 50px;
+  border: 2px solid #c03551;
+  padding: 20px;
+  border-radius: 25px 0 25px 0;
+}
+.Bcartform .Bcartformcontent .Bcartformleft fieldset table tr,
+.Bcartform .Bcartformcontent .Bcartformleft fieldset table th {
+  padding: 10px;
+  text-align: center;
+}
+.Bcartform .Bcartformcontent .Bcartformleft fieldset table tr img,
+.checkoutform fieldset table tr td img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+.Bcartform .Bcartformcontent .Bcartformleft a {
+  color: #c03551;
+  text-decoration: none;
+}
+.Bcartform .Bcartformcontent .Bcartformleft a:hover,
+.Bcartform .Bcartformcontent .Bcartformright div a:hover {
+  color: #b0304a;
+}
+.Bcartform .Bcartformcontent .Bcartformright {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #c03551;
+  margin-top: 36px;
+  margin-right: 100px;
+}
+.Bcartform .Bcartformcontent .Bcartformright div {
+  margin: 20px;
+}
+.Bcartform .Bcartformcontent .Bcartformright div a {
+  text-decoration: none;
+  color: #c03551;
+}
+.Bcartform .Bcartformcontent .Bcartformright div a i {
+  margin-right: 10px;
+}
+footer {
+  color: #f6e0e0;
+  background-color: #c03551;
+  margin: 50px 100px 0 100px;
+  border-radius: 50px 50px 0 0;
+}
+footer .footercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-between;
+  margin-left: 40px;
+  align-items: center;
+}
+footer .footercontainer .footerabout img {
+  width: 50px;
+}
+footer .footercontainer .footerabout div p {
+  margin-bottom: 0;
+}
+footer .footercontainer .addinfofooter {
+  text-align: center;
+}
+footer .footercontainer .addinfofooter a {
+  color: #f6e0e0;
+  display: block;
+  margin: 10px 0;
+}
+footer .footercontainer .addinfofooter a:hover {
+  cursor: pointer;
+  color: #edc0c0;
+}
+footer .footercontainer .sociallinks {
+  display: flex;
+  gap: 22px;
+}
+footer .footercontainer .sociallinks a {
+  color: #f6f6f6;
+  font-size: 30px;
+}
+footer .footercontainer .sociallinks a:hover {
+  color: #edc0c0;
+}
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.countdown h2 span {
+  border: 2px solid #c03551;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+.countdown a {
+  color: #c03551;
+  margin-top: 20px;
+}
+.countdown a:hover {
+  color: #b0304a;
+}
+
+.checkoutpage {
+  margin: 80px 0;
+}
+.checkoutpage .btnConfirm {
+  text-align: center;
+  margin-top: 25px;
+}
+.checkoutpage .btnConfirm input {
+  background-color: #c03551;
+  color: #f6f6f6;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+.checkoutpage .btnConfirm input:hover {
+  background-color: #b0304a;
+  padding: 8px 35px;
+  transition: padding ease 0.3s;
+}
+.checkoutpage h2 {
+  text-align: center;
+}
+.checkoutform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.checkoutform fieldset {
+  padding: 0 40px 20px 40px;
+  border: 1px solid #c03551;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.checkoutform fieldset select {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #c03551;
+  color: #c03551;
+  outline: none;
+  border-radius: 10px;
+}
+.checkoutform fieldset legend {
+  text-align: center;
+  padding: 0 8px;
+}
+.checkoutform fieldset .coformrows {
+  display: flex;
+  gap: 50px;
+}
+.checkoutform fieldset .coformrows label {
+  display: block;
+  font-weight: bold;
+}
+.checkoutform fieldset .coformrows input,
+.checkoutform fieldset .hidden input {
+  padding: 10px;
+  border: 1px solid #c03551;
+  outline: none;
+  margin: 10px 0;
+  color: #c03551;
+  border-radius: 10px;
+}
+.checkoutform fieldset .hidden input::placeholder {
+  color: #c03551;
+}
+.checkoutform fieldset table {
+  width: 1000px;
+  text-align: center;
+}
+.checkoutform fieldset table tr td,
+.checkoutform fieldset table th {
+  padding: 10px 0;
+}
+.checkoutform fieldset table tr .bookingpricelabel {
+  text-align: left;
+}
+.checkoutform fieldset table tr .bookingprice {
+  text-align: right;
+}
+.checkoutform fieldset table tr td hr {
+  border-top: 1px solid #c03551;
+  margin: 0;
+  padding: 0;
+}
+.checkoutform fieldset .hidden {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .logoname {
+    font-size: 20px;
+  }
+  .headercontent h1 {
+    font-size: 75px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  #defaultnav #navrightcontent {
+    display: none;
+  }
+  #defaultnav .barsicon i {
+    display: block;
+  }
+  .favcard {
+    gap: 20px;
+  }
+  .favlist {
+    padding: 20px;
+  }
+  .vmcontainer .visiondiv p,
+  .vmcontainer .missiondiv p {
+    width: 350px;
+  }
+  .aboutsection .aboutdiv p,
+  .contactsection .contactdiv p {
+    width: 400px;
+  }
+  .aboutsection h1,
+  .contactsection h1 {
+    font-size: 50px;
+  }
+  .Bcartform .Bcartformcontent {
+    justify-content: center;
+  }
+  .Bcartform .Bcartformcontent .Bcartformleft fieldset {
+    margin: 0 10px;
+  }
+  .Bcartform .Bcartformcontent .Bcartformleft {
+    overflow-x: auto;
+  }
+  .Bcartform .Bcartformcontent .Bcartformright {
+    margin-right: 0;
+  }
+  .bookingformcontainer form .bookingformcontent .Bformtop .Bformimg {
+    width: 450px;
+  }
+  .checkoutform fieldset {
+    padding: 0 20px 10px 20px;
+  }
+  .checkoutform div {
+    overflow-x: auto;
+  }
+  .checkoutform fieldset legend {
+    text-align: left;
+  }
+  .reviewform {
+    margin: 20px;
+  }
+  .reviewform h1 {
+    font-size: 28px;
+  }
+  footer {
+    margin: 20px 40px 0 20px;
+  }
+  footer .footercontainer {
+    margin-left: auto;
+  }
+  footer .footercontainer .footerabout img {
+    width: 50px;
+  }
+  footer .footercontainer .footerabout div h1,
+  footer .footercontainer .footerabout div p {
+    margin: 10px 0;
+  }
+}
